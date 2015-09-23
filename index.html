@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>W3.CSS Example</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+    </head>
+    <body>
+        <h1>W3.CSS Table and AppML data source Example</h1>
+        <div appml-data="students.json" class="w3-table w3-striped w3-border">
+            <table border="1">
+            <tr>
+                <th>Name</th>
+                <th>Country</th>
+                <th>Subject</th>
+            </tr>
+            <tr appml-repeat="list">
+                <td>{{name}}</td>
+                <td>{{country}}</td>
+                <td>{{subject}}</td>
+            </tr>
+            </table>
+        </div>
+        <div class="w3-row">
+        <h1>W3.CSS Card Example</h1>
+            <div class="w3-card w3-third w3-green w3-padding-jumbo">
+            <p>Hello Developers, This is a w3-card
+                with w3-green as background.
+            </p>
+            </div>
+        </div>
+        <h1>W3.CSS List Example</h1>
+        <ul class="w3-ul w3-quarter w3-teal">
+            <li>Apple</li>
+            <li>Orange</li>
+            <li>Grapes</li>
+        </ul>
+    </body>
+    <script src="appml.js"></script>
+</html> 
